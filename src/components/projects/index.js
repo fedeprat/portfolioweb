@@ -123,7 +123,7 @@ export default function Projects() {
             <p className="description">
               This was one of my first react projects, with it I learnt how to
               make somehow complex custom hooks to pass information from one
-              component to others. It is a single page app that fetches
+              component to others. It is a single page app styled with styled components that fetches
               information about movies from an external API. It uses
               react-router to navigate. <br />
               It has a hero image on home section, searchbar and a movie detail
