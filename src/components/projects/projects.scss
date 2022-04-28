@@ -1,6 +1,15 @@
-.projects {
-    width: 40%;
-  }
+.containerdetodo {
+    width: 100%;
+  will-change: contents;
+  min-height: 566px;
+  position: absolute;
+  opacity: 0;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
 
 h1 {
   color: #fff;
@@ -46,6 +55,9 @@ h2 {
 }
 .realtor {
     max-width: 10% !important;
+}
+.dogsDatabase {
+    max-width: 20%;
 }
 .description {
     font-style: 13px;
