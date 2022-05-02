@@ -39,7 +39,7 @@ export default function About() {
             scenario.
           </p>
           <p>
-            NextJS, ReactJS, React Native, ExpressJS along with NodeJS,
+            TypeScript, NextJS, ReactJS, React Native, ExpressJS along with NodeJS,
             Sequelize and testing are my strong areas but I am always learning
             about other technologies, right now I am studying Java.
           </p>
