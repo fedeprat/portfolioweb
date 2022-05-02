@@ -7,6 +7,7 @@ import ReañtorAssistantBase from '../assets/imagesProjects/RealtorAssistant.png
 import ReañtorAssistantConfigured from '../assets/imagesProjects/RealtorAssistantConfigured.png'
 import dogsDatabase from '../assets/imagesProjects/dogsdatabase.png'
 import moviesdatabase from '../assets/imagesProjects/moviesplace.png'
+import chat from '../assets/imagesProjects/chat2.png'
 
 export default function Projects() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -20,7 +21,10 @@ export default function Projects() {
 
   return (
     <>
-      <div style={{ height: '100%', overflow: 'auto' }} className='containerdetodo'>
+      <div
+        style={{ height: '100%', overflow: 'auto' }}
+        className="containerdetodo"
+      >
         <h1>
           <AnimatedLetters
             letterClass={letterClass}
@@ -123,9 +127,9 @@ export default function Projects() {
             <p className="description">
               This was one of my first react projects, with it I learnt how to
               make somehow complex custom hooks to pass information from one
-              component to others. It is a single page app styled with styled components that fetches
-              information about movies from an external API. It uses
-              react-router to navigate. <br />
+              component to others. It is a single page app styled with styled
+              components that fetches information about movies from an external
+              API. It uses react-router to navigate. <br />
               It has a hero image on home section, searchbar and a movie detail
               section when you click a movie that shows details such as
               director, casting, year of release, hero image and more.
@@ -135,6 +139,29 @@ export default function Projects() {
               </a> |{' '}
               <a href="https://github.com/fedeprat/moviesdatabase">
                 GitHub Repo
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="individualProjects">
+          <img className="chatImage" src={chat} alt="Fred's chat app" />
+          <div style={{ position: 'relative', width: '1500px' }}>
+            <h2>Fred's realtime chat app</h2>
+            <br />
+            <p className="description">
+              This is the second chat app I make, the purpose was learning
+              webSocket protocol and how to use it on a real environment. I used
+              socket.io library to manage the connections. I deployed the
+              back-end to heroku and the front-end to Vercel. This one has
+              emojis, I also did a better job setting up CORS. <br /> Deployed
+              App:{' '}
+              <a href="https://fredrealtimechat.vercel.app/">Fred's chat app</a>{' '}
+              |{' '}
+              <a href="https://github.com/fedeprat/Fredrealtimechat/tree/main">
+                GitHub repo
               </a>
             </p>
           </div>
