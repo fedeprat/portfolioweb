@@ -8,6 +8,7 @@ import ReañtorAssistantConfigured from '../assets/imagesProjects/RealtorAssista
 import dogsDatabase from '../assets/imagesProjects/dogsdatabase.png'
 import moviesdatabase from '../assets/imagesProjects/moviesplace.png'
 import chat from '../assets/imagesProjects/chat2.png'
+import Fredchat from '../assets/imagesProjects/chat1fred.png'
 
 export default function Projects() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -72,14 +73,15 @@ export default function Projects() {
             <h2>Realtor Assistant</h2>
             <br />
             <p className="description">
-              RealtorAssistant was born because my brother is a real estate
-              agent and one day he told me he was wasting a lot of time daily
-              making pictures to upload to WhatsApp status or Instagram stories
-              to advertise the houses for sale or rent. So I thought it would be
-              a good idea to make an app to easily put together some pics of a
-              house and be able to add key information and features like how
-              many rooms of bathrooms it has. For more information on what
-              technologies I used to build it head over to{' '}
+              RealtorAssistant is a React Native mobile app that was born
+              because my brother is a real estate agent and one day he told me
+              he was wasting a lot of time daily making pictures to upload to
+              WhatsApp status or Instagram stories to advertise the houses for
+              sale or rent. So I thought it would be a good idea to make an app
+              to easily put together some pics of a house and be able to add key
+              information and features like how many rooms of bathrooms it has.
+              For more information on what technologies I used to build it head
+              over to{' '}
               <a href="https://github.com/fedeprat/RealtorAssistant">
                 the GitHub repo
               </a>
@@ -152,17 +154,40 @@ export default function Projects() {
             <h2>Fred's realtime chat app</h2>
             <br />
             <p className="description">
-              This is the second chat app I make, the purpose was learning
-              webSocket protocol and how to use it on a real environment. I used
-              socket.io library to manage the connections. I deployed the
-              back-end to heroku and the front-end to Vercel. This one has
-              emojis, I also did a better job setting up CORS. <br /> Deployed
-              App:{' '}
+              This is my first chat app, the purpose was learning webSocket
+              protocol and how to use it on a real environment. I used socket.io
+              library to manage the connections. I deployed the back-end to
+              heroku and the front-end to Vercel. It has emojis, I also
+              configured CORS to accept only connections from the front-end
+              deployed to vercel. <br /> Deployed App:{' '}
               <a href="https://fredrealtimechat.vercel.app/">Fred's chat app</a>{' '}
               |{' '}
-              <a href="https://github.com/fedeprat/Fredrealtimechat/tree/main">
+              <a href="https://github.com/fedeprat/Fredrealtimechat">
                 GitHub repo
               </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="individualProjects">
+          <img className="chatImage" src={Fredchat} alt="Fred's chat app" />
+          <div style={{ position: 'relative', width: '1500px' }}>
+            <h2>Fred's realtime chat app 2.0</h2>
+            <br />
+            <p className="description">
+              Second chat app I made to practice WebSocket protocol, This time I didn't use React or any other
+              js framework. I used plain javascript, html and css. This one has
+              the rooms already preset and it displays the user names that are
+              connected to the current room, you just have to choose one and
+              join to chat. I passed the instanciated socketio variable using a
+              script tag in the html main file. It also has CORS set up to
+              accept connections only from the deployed web itself. It is
+              deployed to Heroku. <br /> Deployed App:{' '}
+              <a href="https://fredschatapp.herokuapp.com/">Fred's chat app</a>{' '}
+              |{' '}
+              <a href="https://github.com/fedeprat/RealTimeChat">GitHub repo</a>
             </p>
           </div>
         </div>
