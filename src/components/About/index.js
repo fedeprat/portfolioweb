@@ -41,7 +41,7 @@ export default function About() {
           <p>
             TypeScript, NextJS, ReactJS, React Native, ExpressJS along with NodeJS,
             Sequelize and testing are my strong areas but I am always learning
-            about other technologies, right now I am studying Java.
+            about other technologies, right now I am studying AWS.
           </p>
           <p>
             Apart from my tech skills I have studied 4 years for a degree in
