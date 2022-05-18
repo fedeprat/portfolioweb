@@ -54,7 +54,7 @@ export default function Home() {
           </h1>
           <Link to="/awsinfo" className="boton">MORE INFO ON THIS</Link>
           <h2>
-            For practice purposes right now as I get <br />some time I am migrating all my <br/> projects
+            For practice purposes right now as I get <br />some time I am migrating all of my <br/> projects
             to AWS as well
           </h2>
         </div>
