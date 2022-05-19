@@ -53,7 +53,7 @@ export default function Home() {
             to <h1 style={{display: "inline", color: "#fee556"}}>Amazon Web Services.</h1>{' '}
           </h1>
           <Link to="/awsinfo" className="boton">MORE INFO ON THIS</Link>
-          <h2>
+          <h2 className='h2'>
             For practice purposes right now as I get <br />some time I am migrating all of my <br/> projects
             to AWS as well
           </h2>

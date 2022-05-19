@@ -26,7 +26,7 @@ export default function Projects() {
         style={{ height: '100%', overflow: 'auto' }}
         className="containerdetodo"
       >
-        <h1>
+        <h1 className='h1'>
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
@@ -36,7 +36,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img src={NFTickets} alt="NFTickets" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>NFTickets</h2>
+            <h2 className='h2'>NFTickets</h2>
             <br />
             <p className="description">
               NFTickets is an app that lets you buy and sell actual NFT tickets
@@ -70,7 +70,7 @@ export default function Projects() {
             alt="ReañtorAssistantBase"
           />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>Realtor Assistant</h2>
+            <h2 className='h2'>Realtor Assistant</h2>
             <br />
             <p className="description">
               RealtorAssistant is a React Native mobile app that was born
@@ -94,7 +94,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="dogsDatabase" src={dogsDatabase} alt="dogsDatabase" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>Dogs Database</h2>
+            <h2 className='h2'>Dogs Database</h2>
             <br />
             <p className="description">
               Dogs database is an app that gives all kind of information about
@@ -124,7 +124,7 @@ export default function Projects() {
             alt="moviesdatabase"
           />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>Movies place</h2>
+            <h2 className='h2'>Movies place</h2>
             <br />
             <p className="description">
               This was one of my first react projects, with it I learnt how to
@@ -151,7 +151,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="chatImage" src={chat} alt="Fred's chat app" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>Fred's realtime chat app</h2>
+            <h2 className='h2'>Fred's realtime chat app</h2>
             <br />
             <p className="description">
               This is my first chat app, the purpose was learning webSocket
@@ -174,7 +174,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="chatImage" src={Fredchat} alt="Fred's chat app" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2>Fred's realtime chat app 2.0</h2>
+            <h2 className='h2'>Fred's realtime chat app 2.0</h2>
             <br />
             <p className="description">
               Second chat app I made to practice WebSocket protocol, This time I didn't use React or any other

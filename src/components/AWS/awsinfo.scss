@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+.papurri {
+  border: 1px solid #ffd700;
+  padding: 20px;
+  margin-left: 150px;
+}
+.budget {
+  border: 1px solid #ffd700;
+  width: 600px;
+  margin-left: 1200px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  h1, h2 {
+      margin: 40px;
+  }
+}
+
+#animatedLetters {
+  margin: 40px;
+  margin-left: 100px;
+}
