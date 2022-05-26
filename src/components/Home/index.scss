@@ -1,13 +1,14 @@
 .home-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
+    display: flex;
     max-height: 90%;
+    flex-direction: column;
   }
-  h1 {
+  .h1 {
     color: #fff;
     font-size: 53px;
     margin: 0;
@@ -54,6 +55,7 @@
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
+    max-width: 120px;
     &:hover {
       background: #ffd700;
       color: #333;
@@ -63,33 +65,196 @@
 
 .containerMigration {
   border: 1px solid #ffd700;
+  padding: 5rem;
   position: relative;
-  width: 900px;
-  height: 500px;
-  margin-left: 900px;
-  margin-top: 200px;
+  max-width: 90rem;
+  max-height: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 55px;
 }
 
 .boton {
   color: #ffd700;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
-    font-family: sans-serif;
-    text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid #ffd700;
-    margin-top: 25px;
-    float: left;
-    animation: fadeInAnimation 1s 1.8s backwards;
-    white-space: nowrap;
-    &:hover {
-      background: #ffd700;
-      color: #333;
-      cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #ffd700;
+  margin-top: 25px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+  &:hover {
+    background: #ffd700;
+    color: #333;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1660px) {
+  .home-page {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 894px) and (max-width: 1100px) {
+  .home-page {
+    flex-direction: column;
+    .text-zone {
+      justify-content: center;
+      align-items: center;
     }
+    .h1 {
+      color: #fff;
+      font-size: 33px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #fee556;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    .h2 {
+      color: #fff;
+      font-size: 28px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      display: block;
+      &::before {
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 893px) {
+  .home-page {
+    flex-direction: column;
+    .text-zone {
+      justify-content: center;
+      align-items: center;
+    }
+    .h1 {
+      color: #fff;
+      font-size: 23px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #fee556;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    .h2 {
+      color: #fff;
+      font-size: 20px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      display: block;
+      &::before {
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        opacity: 0.6;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .home-page {
+    flex-direction: column;
+    .text-zone {
+      justify-content: center;
+      align-items: center;
+      max-width: 220px;
+    }
+    .h1 {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #fee556;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    .h2 {
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      display: block;
+      &::before {
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        opacity: 0.6;
+      }
+    }
+  }
+  .containerMigration {
+    max-width: 200px;
+  }
+  .boton {
+    margin-bottom: 20px;
+  }
 }

@@ -9,11 +9,18 @@
   padding: 20px;
   margin-left: 150px;
 }
+
+.containerPicante {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .budget {
   border: 1px solid #ffd700;
   width: 600px;
-  margin-left: 1200px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -26,4 +33,50 @@
 #animatedLetters {
   margin: 40px;
   margin-left: 100px;
+}
+
+.containerBudget {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 200px;
+}
+#whatsnext {
+  margin: 100px;
+  margin-bottom: 200px;
+  width: 600px;
+  border: 1px solid #ffd700;
+  padding: 30px;
+}
+.nextcontainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 1900px) {
+  .containerPicante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerBudget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nextcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    align-items: center;
+    justify-content: center;
+  }
 }

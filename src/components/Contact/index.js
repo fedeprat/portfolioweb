@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function Contact() {
-  const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
 
   function sendEmail(e) {
@@ -26,23 +25,12 @@ export default function Contact() {
         }
       )
   }
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3300)
-  }, [])
   return (
     <>
       <div className="container contact-page">
+
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              index={15}
-              letterClass={letterClass}
-            />
-          </h1>
+          <h1>Contact Me</h1>
           <p>
             I am looking for my first fulltime job. If you think I can add value
             to your team don't hesitate to contact me!
@@ -83,6 +71,7 @@ export default function Contact() {
             </form>
           </div>
         </div>
+        
       </div>
       <Loader type="pacman" />
     </>

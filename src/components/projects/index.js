@@ -1,7 +1,7 @@
 import Loader from 'react-loaders'
 import './projects.scss'
-import { useState, useEffect } from 'react'
-import AnimatedLetters from '../animatedLetters'
+// import { useState, useEffect } from 'react'
+// import AnimatedLetters from '../animatedLetters'
 import NFTickets from '../assets/imagesProjects/NFTickets.png'
 import ReañtorAssistantBase from '../assets/imagesProjects/RealtorAssistant.png'
 import ReañtorAssistantConfigured from '../assets/imagesProjects/RealtorAssistantConfigured.png'
@@ -9,34 +9,29 @@ import dogsDatabase from '../assets/imagesProjects/dogsdatabase.png'
 import moviesdatabase from '../assets/imagesProjects/moviesplace.png'
 import chat from '../assets/imagesProjects/chat2.png'
 import Fredchat from '../assets/imagesProjects/chat1fred.png'
+import aws from '../assets/imagesProjects/aws.png'
 
 export default function Projects() {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
+  // const [letterClass, setLetterClass] = useState('text-animate')
+  // const nameArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLetterClass('text-animate-hover')
+  //   }, 3000)
+  // }, [])
 
   return (
     <>
-      <div
-        style={{ height: '100%', overflow: 'auto' }}
-        className="containerdetodo"
-      >
-        <h1 className='h1'>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            index={8}
-          />
+      <div style={{ height: '100%', overflow: 'auto' }} className="containerdetodo">
+        <h1 className="h1 projects">
+          Projects
         </h1>
+
         <div className="individualProjects">
           <img src={NFTickets} alt="NFTickets" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>NFTickets</h2>
+            <h2 className="h2">NFTickets</h2>
             <br />
             <p className="description">
               NFTickets is an app that lets you buy and sell actual NFT tickets
@@ -70,7 +65,7 @@ export default function Projects() {
             alt="ReañtorAssistantBase"
           />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>Realtor Assistant</h2>
+            <h2 className="h2">Realtor Assistant</h2>
             <br />
             <p className="description">
               RealtorAssistant is a React Native mobile app that was born
@@ -94,7 +89,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="dogsDatabase" src={dogsDatabase} alt="dogsDatabase" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>Dogs Database</h2>
+            <h2 className="h2">Dogs Database</h2>
             <br />
             <p className="description">
               Dogs database is an app that gives all kind of information about
@@ -124,8 +119,17 @@ export default function Projects() {
             alt="moviesdatabase"
           />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>Movies place</h2>
-            <br />
+            <h2 className="h2">
+              Movies place{' '}
+              <a
+                rel="noreferrer"
+                href="https://movies-database.fedeprat.com"
+                target="_blank"
+              >
+                Click to go
+              </a>{' '}
+            <img src={aws} alt="aws" />
+            </h2>
             <p className="description">
               This was one of my first react projects, with it I learnt how to
               make somehow complex custom hooks to pass information from one
@@ -136,7 +140,7 @@ export default function Projects() {
               section when you click a movie that shows details such as
               director, casting, year of release, hero image and more.
               <br /> Deployed App:{' '}
-              <a href="https://movies-place.netlify.app/">
+              <a href="https://movies-database.fedeprat.com/">
                 Movies database
               </a> |{' '}
               <a href="https://github.com/fedeprat/moviesdatabase">
@@ -151,7 +155,7 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="chatImage" src={chat} alt="Fred's chat app" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>Fred's realtime chat app</h2>
+            <h2 className="h2">Fred's realtime chat app</h2>
             <br />
             <p className="description">
               This is my first chat app, the purpose was learning webSocket
@@ -174,17 +178,18 @@ export default function Projects() {
         <div className="individualProjects">
           <img className="chatImage" src={Fredchat} alt="Fred's chat app" />
           <div style={{ position: 'relative', width: '1500px' }}>
-            <h2 className='h2'>Fred's realtime chat app 2.0</h2>
+            <h2 className="h2">Fred's realtime chat app 2.0</h2>
             <br />
             <p className="description">
-              Second chat app I made to practice WebSocket protocol, This time I didn't use React or any other
-              js framework. I used plain javascript, html and css. This one has
-              the rooms already preset and it displays the user names that are
-              connected to the current room, you just have to choose one and
-              join to chat. I passed the instanciated socketio variable using a
-              script tag in the html main file. It also has CORS set up to
-              accept connections only from the deployed web itself. It is
-              deployed to Heroku. <br /> Deployed App:{' '}
+              Second chat app I made to practice WebSocket protocol, This time I
+              didn't use React or any other js framework. I used plain
+              javascript, html and css. This one has the rooms already preset
+              and it displays the user names that are connected to the current
+              room, you just have to choose one and join to chat. I passed the
+              instanciated socketio variable using a script tag in the html main
+              file. It also has CORS set up to accept connections only from the
+              deployed web itself. It is deployed to Heroku. <br /> Deployed
+              App:{' '}
               <a href="https://fredschatapp.herokuapp.com/">Fred's chat app</a>{' '}
               |{' '}
               <a href="https://github.com/fedeprat/RealTimeChat">GitHub repo</a>

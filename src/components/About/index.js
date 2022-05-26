@@ -1,9 +1,6 @@
-import AnimatedLetters from '../animatedLetters'
-import { useState, useEffect } from 'react'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
@@ -14,36 +11,26 @@ import {
 import Loader from 'react-loaders'
 
 export default function About() {
-  const [letterClass, setLetterClass] = useState('text-animate')
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
 
   return (
     <>
-      <div className="container about-page">
+      <div className="containerPro">
+
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
-              strArray={['a', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              index={15}
-              letterClass={letterClass}
-            />
+          <h1 className='h1'>
+            About me
           </h1>
-          <p>
+          <p className='p'>
             I am a fullstack developer eager to be part of a team and apply all
             the knowledge and experience I have gathered in a real life
             scenario.
           </p>
-          <p>
+          <p className='p'>
             TypeScript, NextJS, ReactJS, React Native, ExpressJS along with NodeJS,
             Sequelize and testing are my strong areas but I am always learning
             about other technologies, right now I am studying AWS.
           </p>
-          <p>
+          <p className='p'>
             Apart from my tech skills I have studied 4 years for a degree in
             Biotechnology. During 4th year I was asigned to a task for
             Bioinformatics involving ExpressJS and making a server to call a
@@ -51,6 +38,7 @@ export default function About() {
             decided I definitely wanted to dedicate my life to it.
           </p>
         </div>
+
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
@@ -73,6 +61,7 @@ export default function About() {
             </div>
           </div>
         </div>
+
       </div>
       <Loader type="pacman" />
     </>

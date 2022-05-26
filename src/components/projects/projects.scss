@@ -1,8 +1,6 @@
 .containerdetodo {
-    width: 100%;
+  width: 100%;
   will-change: contents;
-  min-height: 566px;
-  position: absolute;
   opacity: 0;
   margin: 0 auto;
   z-index: 1;
@@ -16,13 +14,10 @@
   font-size: 53px;
   font-family: 'Coolvetica';
   font-weight: 400;
-  margin-left: 150px;
-  margin-top: 200px;
   &::before {
     font-family: 'La Belle Aurore';
     color: #ffd700;
     font-size: 18px;
-    left: 15px;
     opacity: 0.6;
   }
 }
@@ -37,48 +32,70 @@
     font-family: 'La Belle Aurore';
     color: #ffd700;
     font-size: 18px;
-    margin-top: -40px;
-    left: 15px;
     opacity: 0.6;
   }
 }
 
 .individualProjects {
-    display: flex;
-    flex-direction: row;
-    margin: 50px;
-    margin-left: 150px;
-    img {
-        max-width: 30%;
-        margin-right: 30px;
-    }
-}
-.realtor {
-    max-width: 10% !important;
-}
-.dogsDatabase {
-    max-width: 20%;
-}
-.chatImage {
-  max-width: 30% !important;
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  margin-left: 8rem;
+  img {
+    margin-right: 2rem;
+  }
 }
 
 .description {
-    font-style: 13px;
-    color: #fff;
-    font-family: sans-serif;
-    font-weight: 300;
-    min-width: fit-content;
-    animation: pulse 1s;
-    position: absolute;
+  font-style: 13px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 300;
+  min-width: fit-content;
+  animation: pulse 1s;
+  position: absolute;
 }
 a {
-    color: #ffd700;
+  color: #ffd700;
 }
 a:visited {
-    color: #ffd700;
-    
+  color: #ffd700;
 }
 a:hover {
-    color: white;
+  color: white;
 }
+.projects {
+  margin-left: 16rem;
+}
+
+/* .h1 {
+  color: #fff;
+  font-size: 53px;
+  font-family: 'Coolvetica';
+  font-weight: 400;
+  margin-left: 150px;
+  margin-top: 200px;
+  &::before {
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 18px;
+    left: 15px;
+    opacity: 0.6;
+  }
+} */
+/* .h2 {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  font-family: 'Coolvetica';
+  font-weight: 400;
+  display: block;
+  &::before {
+    font-family: 'La Belle Aurore';
+    color: #ffd700;
+    font-size: 18px;
+    margin-top: -40px;
+    left: 15px;
+    opacity: 0.6;
+  }
+} */
