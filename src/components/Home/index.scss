@@ -158,6 +158,7 @@
     .text-zone {
       justify-content: center;
       align-items: center;
+      height: 30%;
     }
     .h1 {
       color: #fff;
@@ -202,13 +203,14 @@
   }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 368px) and (max-width: 599px) {
   .home-page {
     flex-direction: column;
     .text-zone {
       justify-content: center;
       align-items: center;
       max-width: 220px;
+      height: 200px;
     }
     .h1 {
       color: #fff;
@@ -253,6 +255,64 @@
   }
   .containerMigration {
     max-width: 200px;
+  }
+  .boton {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 367px) {
+  .home-page {
+    flex-direction: column;
+    .text-zone {
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 150px;
+    }
+    .h1 {
+      color: #fff;
+      font-size: 18px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      &::before {
+        content: '<h1>';
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        margin-top: -40px;
+        left: 15px;
+        opacity: 0.6;
+      }
+      &::after {
+        content: '<h1/>';
+        font-family: 'La Belle Aurore';
+        color: #fee556;
+        font-size: 18px;
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+    .h2 {
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      display: block;
+      &::before {
+        font-family: 'La Belle Aurore';
+        color: #ffd700;
+        font-size: 18px;
+        opacity: 0.6;
+      }
+    }
+  }
+  .containerMigration {
+    max-width: 150px;
   }
   .boton {
     margin-bottom: 20px;
