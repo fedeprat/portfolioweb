@@ -1,5 +1,3 @@
-import AnimatedLetters from '../animatedLetters'
-import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
 import './awsinfo.scss'
 import schema from '../assets/imagesProjects/schema.png'
@@ -7,18 +5,17 @@ import awsFree from '../assets/imagesProjects/awsFree.png'
 import chatApp from '../assets/imagesProjects/chatapp.png'
 
 export default function AwsInfo() {
-
   return (
     <>
       <div className="container" style={{ height: '100%' }}>
         <div>
           <h1 id="animatedLetters" className="h1">
-AWS Architecture info
+            AWS Architecture info
           </h1>
         </div>
 
         <div className="containerPicante">
-          <div className="papurri" style={{ width: '700px', minHeight: 0 }}>
+          <div className="papurri">
             <h2 className="h2" style={{ marginBottom: '40px' }}>
               Architecture
             </h2>
@@ -53,12 +50,11 @@ AWS Architecture info
           </div>
 
           <div>
-            <h1 className="h2" style={{ marginLeft: '70px' }}>
+            <h1 className="h2" style={{ marginLeft: '80px' }}>
               Services used so far
             </h1>
             <img src={schema} alt="schema" />
           </div>
-
         </div>
 
         <div style={{ width: '100%', height: '150px' }}>
@@ -66,13 +62,13 @@ AWS Architecture info
         </div>
 
         <div className="containerBudget">
-          <div style={{ width: '1000px' }}>
+          <div>
             <img src={awsFree} alt="aws free tier usage" />
           </div>
           <div className="budget">
-            <h1 className="h1" style={{ marginBottom: '10px' }}>
+            <h2 className="h2" style={{ marginBottom: '10px' }}>
               Budget management
-            </h1>
+            </h2>
             <h2 className="h2">
               I've set a budget alert limit to the whole account as well as
               individual budget limits for each subdomain. I've also set up an
@@ -90,15 +86,11 @@ AWS Architecture info
             function along with a WebSocket ApiGateway for the back-end
             connection
           </h2>
-          <h2 className="h2" style={{ position: 'absolute', right: '300px' }}>
-            This is the architecture I am working on
-          </h2>
-          <div>
-            <img
-              src={chatApp}
-              alt="chatApp diagram"
-              style={{ marginTop: '50px' }}
-            />
+          <div className='imagenNext'>
+            <h2 className="h2" style={{marginLeft: "65px"}}>
+              This is the architecture I am working on
+            </h2>
+            <img src={chatApp} alt="chatApp diagram" />
           </div>
         </div>
       </div>
