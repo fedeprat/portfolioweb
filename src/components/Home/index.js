@@ -25,7 +25,7 @@ export default function Home() {
             </h1>{' '}
           </h1>
           <Link to="/awsinfo" className="boton">
-            MORE INFO ON THIS
+            ARCHITECTURE INFO
           </Link>
           <h2 className="h2">
             For practice purposes right now as I get <br />

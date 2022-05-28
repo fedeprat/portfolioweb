@@ -8,11 +8,11 @@
   opacity: 0;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
-}
-.text-zone {
-  width: 50rem;
-  border: 1px solid yellow;
-  padding: 2rem;
+  .text-zone {
+    width: 50rem;
+    border: 1px solid yellow;
+    padding: 2rem;
+  }
 }
 
 .stage-cube-cont {
@@ -22,7 +22,6 @@
   justify-content: center;
   align-items: center;
   transform: translate(-30%, -20%);
-  
 }
 .cubespinner {
   animation-name: spincube;
@@ -105,9 +104,9 @@
 @media screen and (min-width: 668px) and (max-width: 1270px) {
   .containerPro {
     flex-direction: column;
-  }
-  .text-zone {
-    margin-left: 55px;
+    .text-zone {
+      margin-left: 55px;
+    }
   }
 }
 
@@ -115,14 +114,16 @@
   .containerPro {
     flex-direction: column;
     justify-content: center;
+    .text-zone {
+      margin-left: 55px;
+      height: 40%;
+      min-height: 468px;
+    }
   }
   .p {
-    font-size: 13px;
+    font-size: 17px;
   }
-  .text-zone {
-    margin-left: 55px;
-    height: 40%;
-  }
+
   .stage-cube-cont {
     margin-left: 55px;
   }
@@ -132,16 +133,18 @@
   .containerPro {
     flex-direction: column;
     justify-content: center;
+    .text-zone {
+      margin-left: 55px;
+      height: 40%;
+      width: 400px;
+      min-height: 400px;
+    }
   }
   .p {
-    font-size: 13px;
+    font-size: 14px;
     width: 400px;
   }
-  .text-zone {
-    margin-left: 55px;
-    height: 40%;
-    width: 400px;
-  }
+
   .stage-cube-cont {
     margin-left: 195px;
   }
@@ -151,15 +154,17 @@
   .containerPro {
     flex-direction: column;
     justify-content: center;
+    .text-zone {
+      margin-left: 55px;
+      height: 40%;
+      width: 300px;
+      min-height: 420px;
+    }
   }
   .p {
     font-size: 13px;
   }
-  .text-zone {
-    margin-left: 55px;
-    height: 40%;
-    width: 300px;
-  }
+
   .stage-cube-cont {
     margin-left: 195px;
   }
@@ -169,14 +174,15 @@
   .containerPro {
     flex-direction: column;
     justify-content: center;
+    .text-zone {
+      margin-left: 55px;
+      width: 230px;
+    }
   }
   .p {
-    font-size: 13px;
+    font-size: 15px;
   }
-  .text-zone {
-    margin-left: 55px;
-    width: 230px;
-  }
+
   .stage-cube-cont {
     margin-left: 195px;
     display: none;

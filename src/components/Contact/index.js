@@ -1,8 +1,8 @@
 import Loader from 'react-loaders'
-import AnimatedLetters from '../animatedLetters'
 import './index.scss'
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import fullstack from '../assets/imagesProjects/fullstack.png'
 
 export default function Contact() {
   const refForm = useRef()
@@ -29,7 +29,7 @@ export default function Contact() {
     <>
       <div className="container contact-page">
 
-        <div className="text-zone">
+        <div className="containerForm">
           <h1>Contact Me</h1>
           <p>
             I am looking for my first fulltime job. If you think I can add value
@@ -70,6 +70,9 @@ export default function Contact() {
               </ul>
             </form>
           </div>
+        </div>
+        <div className='imagen'>
+          <img src={fullstack} alt="fullstack development" />
         </div>
         
       </div>

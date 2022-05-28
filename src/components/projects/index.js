@@ -1,10 +1,7 @@
 import Loader from 'react-loaders'
 import './projects.scss'
-// import { useState, useEffect } from 'react'
-// import AnimatedLetters from '../animatedLetters'
 import NFTickets from '../assets/imagesProjects/NFTickets.png'
 import ReañtorAssistantBase from '../assets/imagesProjects/RealtorAssistant.png'
-import ReañtorAssistantConfigured from '../assets/imagesProjects/RealtorAssistantConfigured.png'
 import dogsDatabase from '../assets/imagesProjects/dogsdatabase.png'
 import moviesdatabase from '../assets/imagesProjects/moviesplace.png'
 import chat from '../assets/imagesProjects/chat2.png'
@@ -12,25 +9,14 @@ import Fredchat from '../assets/imagesProjects/chat1fred.png'
 import aws from '../assets/imagesProjects/aws.png'
 
 export default function Projects() {
-  // const [letterClass, setLetterClass] = useState('text-animate')
-  // const nameArray = ['P', 'r', 'o', 'j', 'e', 'c', 't', 's']
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 3000)
-  // }, [])
-
   return (
     <>
-      <div style={{ height: '100%', overflow: 'auto' }} className="containerdetodo">
-        <h1 className="h1 projects">
-          Projects
-        </h1>
+      <div style={{ height: '100%' }} className="containerdetodo">
+        <h1 className="h1 projects">Projects</h1>
 
         <div className="individualProjects">
           <img src={NFTickets} alt="NFTickets" />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">NFTickets</h2>
             <br />
             <p className="description">
@@ -56,15 +42,10 @@ export default function Projects() {
         <div className="individualProjects">
           <img
             className="realtor"
-            src={ReañtorAssistantConfigured}
-            alt="ReañtorAssistantConfigured"
-          />
-          <img
-            className="realtor"
             src={ReañtorAssistantBase}
             alt="ReañtorAssistantBase"
           />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">Realtor Assistant</h2>
             <br />
             <p className="description">
@@ -88,7 +69,7 @@ export default function Projects() {
 
         <div className="individualProjects">
           <img className="dogsDatabase" src={dogsDatabase} alt="dogsDatabase" />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">Dogs Database</h2>
             <br />
             <p className="description">
@@ -118,17 +99,19 @@ export default function Projects() {
             src={moviesdatabase}
             alt="moviesdatabase"
           />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">
               Movies place{' '}
               <a
                 rel="noreferrer"
                 href="https://movies-database.fedeprat.com"
                 target="_blank"
+                style={{display: "inline"}}
               >
                 Click to go
               </a>{' '}
-            <img src={aws} alt="aws" />
+              <img src={aws} alt="aws" />
+              <p className='description' style={{display: "inline"}}>Deployed to AWS</p>
             </h2>
             <p className="description">
               This was one of my first react projects, with it I learnt how to
@@ -142,7 +125,8 @@ export default function Projects() {
               <br /> Deployed App:{' '}
               <a href="https://movies-database.fedeprat.com/">
                 Movies database
-              </a> |{' '}
+              </a>{' '}
+              |{' '}
               <a href="https://github.com/fedeprat/moviesdatabase">
                 GitHub Repo
               </a>
@@ -154,7 +138,7 @@ export default function Projects() {
 
         <div className="individualProjects">
           <img className="chatImage" src={chat} alt="Fred's chat app" />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">Fred's realtime chat app</h2>
             <br />
             <p className="description">
@@ -177,7 +161,7 @@ export default function Projects() {
 
         <div className="individualProjects">
           <img className="chatImage" src={Fredchat} alt="Fred's chat app" />
-          <div style={{ position: 'relative', width: '1500px' }}>
+          <div>
             <h2 className="h2">Fred's realtime chat app 2.0</h2>
             <br />
             <p className="description">

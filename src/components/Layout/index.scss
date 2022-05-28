@@ -22,11 +22,10 @@
 .container {
   width: 100%;
   will-change: contents;
-  height: 90%;
-  min-height: 566px;
+  //height: 90%;
+  min-height: 800px;
   position: absolute;
   opacity: 0;
-  top: 5%;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
@@ -59,7 +58,6 @@
         font-family: 'La Belle Aurore';
         font-size: 18px;
         position: absolute;
-        margin-top: -10px;
         left: -10px;
         opacity: 0.6;
         line-height: 18px;
@@ -71,7 +69,6 @@
         line-height: 18px;
         position: absolute;
         left: -30px;
-        bottom: -20px;
         margin-left: 20px;
         opacity: 0.6;
       }
@@ -97,5 +94,11 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+
+@media screen and (max-height: 858px) {
+  .tags {
+    display: none;
   }
 }
